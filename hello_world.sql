@@ -2,7 +2,7 @@
 -- Oracle stored procedure to greet a user in multiple languages
 
 CREATE OR REPLACE PROCEDURE hello_world (
-    p_name     IN VARCHAR2 DEFAULT 'World',
+    p_name     IN VARCHAR2 DEFAULT 'Oracle',
     p_language IN VARCHAR2 DEFAULT 'EN'
 ) AS
     v_greeting  VARCHAR2(500);
