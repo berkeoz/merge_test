@@ -15,6 +15,8 @@ BEGIN
         v_greeting := 'Hello, ' || p_name || '!';
     ELSIF p_language = 'ES' THEN
         v_greeting := 'Hola, ' || p_name || '!';
+    ELSIF p_language = 'FR' THEN
+        v_greeting := 'Bonjour, ' || p_name || '!';
     ELSE
         v_greeting := 'Greetings, ' || p_name || '!';
     END IF;
