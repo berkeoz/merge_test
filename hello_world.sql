@@ -5,7 +5,7 @@ CREATE OR REPLACE PROCEDURE hello_world (
     p_name     IN VARCHAR2 DEFAULT 'World',
     p_language IN VARCHAR2 DEFAULT 'EN'
 ) AS
-    v_greeting  VARCHAR2(200);
+    v_greeting  VARCHAR2(500);
     v_timestamp VARCHAR2(30);
 BEGIN
     v_timestamp := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS');
