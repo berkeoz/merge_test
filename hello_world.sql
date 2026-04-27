@@ -20,7 +20,7 @@ BEGIN
     END IF;
 
     DBMS_OUTPUT.PUT_LINE(v_greeting);
-    DBMS_OUTPUT.PUT_LINE('Timestamp : ' || v_timestamp);
+    DBMS_OUTPUT.PUT_LINE('Run at    : ' || v_timestamp);
     DBMS_OUTPUT.PUT_LINE('Language  : ' || p_language);
 
 EXCEPTION
