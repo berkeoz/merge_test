@@ -21,9 +21,11 @@ BEGIN
         v_greeting := 'Greetings, ' || p_name || '!';
     END IF;
 
+    DBMS_OUTPUT.PUT_LINE('=== hello_world result ===');
     DBMS_OUTPUT.PUT_LINE(v_greeting);
     DBMS_OUTPUT.PUT_LINE('Run at    : ' || v_timestamp);
     DBMS_OUTPUT.PUT_LINE('Language  : ' || p_language);
+    DBMS_OUTPUT.PUT_LINE('==========================');
 
 EXCEPTION
     WHEN OTHERS THEN
