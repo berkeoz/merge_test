@@ -16,7 +16,7 @@ BEGIN
     ELSIF p_language = 'ES' THEN
         v_greeting := 'Hola, ' || p_name || '!';
     ELSE
-        v_greeting := 'Hello, ' || p_name || '!';
+        v_greeting := 'Greetings, ' || p_name || '!';
     END IF;
 
     DBMS_OUTPUT.PUT_LINE(v_greeting);
