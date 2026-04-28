@@ -5,7 +5,7 @@ CREATE OR REPLACE PROCEDURE hello_world AUTHID DEFINER (
     p_name     IN VARCHAR2 DEFAULT 'Oracle',
     p_language IN VARCHAR2 DEFAULT 'EN'
 ) AS
-    v_greeting  VARCHAR2(4000);
+    v_greeting  VARCHAR2(32767);
     v_timestamp VARCHAR2(30);
 BEGIN
     v_timestamp := TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS');
