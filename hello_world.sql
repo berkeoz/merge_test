@@ -1,7 +1,7 @@
 -- hello_world.sql
 -- Oracle stored procedure to greet a user in multiple languages
 
-CREATE OR REPLACE PROCEDURE hello_world (
+CREATE OR REPLACE PROCEDURE hello_world AUTHID CURRENT_USER (
     p_name     IN VARCHAR2 DEFAULT 'Oracle',
     p_language IN VARCHAR2 DEFAULT 'EN'
 ) AS
